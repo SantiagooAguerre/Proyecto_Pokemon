@@ -4,11 +4,8 @@ public interface IPokemon
 {
     string Nombre { get; }
     int Vida { get; }
-    List<IHabilidad> Habilidades { get; }
+    List<IHabilidades> Habilidades { get; }
     ITipo TipoPrincipal { get; }
     ITipo TipoSecundario { get; }
-
-    void AprenderHabilidad(IHabilidad habilidad);
-    void Atacar(IPokemon objetivo, int habilidadIndex);
-    void RecibirDaño(int cantidad);
+    void AprenderHabilidad(IHabilidades habilidad);
 }
